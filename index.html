@@ -6,8 +6,10 @@
     <meta name="description" content="Jacob Escoto's Portfolio" />
     <meta name="robots" content="index, follow" />
 
+    <meta property="og:title" content="Jacob Escoto | Portfolio" />
+
     <title>Jacob Escoto</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -15,7 +17,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
   </head>
+
   <body>
     <header class="navigation">
       <nav>
@@ -45,14 +49,16 @@
         </div>
         <h1>Hey, I'm<span> Jacob Escoto</span></h1>
         <p>
-          <strong>Computer System Engineering student </strong>
+          <strong>Computer Systems Engineering student </strong>
           focused on Software Development and process automation. Currently
           building functional projects while strengthening technical foundations
           through personal practice.
         </p>
         <nav aria-label="Hero navigation">
           <a href="#projects">View Projects</a>
-          <a href="extras/Jacob_Escoto_CV.pdf" target="_blank">Resume</a>
+          <a href="public/Jacob_Escoto_CV.pdf" target="_blank" rel="noopener">
+            Resume
+          </a>
         </nav>
       </section>
       <!-- About Section -->
@@ -71,42 +77,80 @@
           optimal performance.
         </p>
       </section>
+      <!-- Contact Section -->
       <section class="contact" id="contact">
         <header>
           <h2><i class="fa-regular fa-address-card"></i>Contact</h2>
         </header>
-        <form
-          class="contact-form"
-          action="https://formspree.io/f/mojyjbao"
-          method="POST"
-        >
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="e.g. example@gmail.com"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Your message goes here..."
-              required
-            ></textarea>
-          </div>
+        <div class="contact-container">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mojyjbao"
+            method="POST"
+          >
+            <p class="contact-label">You can contact me via email:</p>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. Jacob"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. example@gmail.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your message goes here..."
+                required
+              ></textarea>
+            </div>
 
-          <button type="submit">Send</button>
-        </form>
+            <button type="submit">Send</button>
+          </form>
+          <aside>
+            <p class="contact-label">
+              You can also find me on these platforms:
+            </p>
+            <ul>
+              <li>
+                <a href="https://github.com/JacobEscoto" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                  Github
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jacobescoto"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/jcb08_" target="_blank">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  X
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -124,7 +168,7 @@
             </a>
           </li>
           <li>
-            <a href="extras/Jacob_Escoto_CV.pdf" target="_blank">
+            <a href="public/Jacob_Escoto_CV.pdf" target="_blank">
               <i class="fa-regular fa-file-lines"></i>
             </a>
           </li>

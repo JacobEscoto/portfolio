@@ -1,0 +1,119 @@
+.hero-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-profile img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0 20px rgba(62, 194, 255, 0.3);
+}
+
+.hero-profile a {
+  background: rgba(31, 42, 56, 0.8);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.hero-profile a:hover {
+  background: var(--accent-color);
+  color: #0f1117;
+  transform: translateY(-2px);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  font-weight: 800;
+  background-image: linear-gradient(to right, #4983ff, #18d2eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  max-width: 600px;
+}
+
+.hero p strong {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.hero nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.hero nav a {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.hero nav a:first-child {
+  background: var(--accent-color);
+  color: #0f1117;
+}
+
+.hero nav a:last-child {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  background: transparent;
+}
+
+.hero nav a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(62, 194, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .hero profile {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+    margin-left: 0;
+    max-width: 90%;
+    margin-right: auto;
+  }
+
+  .hero nav {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+}

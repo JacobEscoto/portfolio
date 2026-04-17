@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p,
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+.footer li {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+.footer a {
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.2);
+}
+
+.footer .fa-brands,
+.fa-regular {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+}
