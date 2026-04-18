@@ -43,7 +43,8 @@ a {
   color: inherit;
 }
 
-section header h2 .fa-regular {
+section header h2 .fa-regular,
+section header h2 .fa-solid {
   font-size: 1.4rem;
   margin-right: 10px;
 }
