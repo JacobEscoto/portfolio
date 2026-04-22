@@ -152,11 +152,7 @@
           <h2><i class="fa-regular fa-address-card"></i>Contact</h2>
         </header>
         <div class="contact-container">
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/mojyjbao"
-            method="POST"
-          >
+          <form id="contact-form" class="contact-form">
             <p class="contact-label">You can contact me via email:</p>
             <div class="form-group">
               <label for="name">Name:</label>
@@ -189,7 +185,8 @@
               ></textarea>
             </div>
 
-            <button type="submit">Send</button>
+            <button type="submit" id="submit-btn">Send</button>
+            <p id="form-status"></p>
           </form>
           <aside>
             <p class="contact-label">
